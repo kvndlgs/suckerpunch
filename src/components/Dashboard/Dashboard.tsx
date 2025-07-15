@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useCharacters } from '../../hooks/useCharacters';
 import { CharacterCard } from '../Characters/CharacterCard';
 import { CharacterForm } from '../Characters/CharacterForm';
@@ -48,8 +48,8 @@ export function Dashboard() {
   const renderDashboard = () => (
     <div className="space-y-8">
       <div className="text-center">
-        <h2 className="text-4xl font-bold text-white mb-4">
-          Welcome to <span className="text-purple-400">Sucker</span><span className="text-orange-400">punch</span>
+        <h2 className="text-4xl font-light mb-4">
+          Welcome to <span className=".neonText.flickabitch ">Sucker</span><span className="text-orange-400">punch</span>
         </h2>
         <p className="text-gray-400 text-lg">AI-powered rap battles with your favorite characters</p>
       </div>
@@ -63,7 +63,7 @@ export function Dashboard() {
             <Zap className="h-8 w-8 text-white" />
             <h3 className="text-xl font-bold text-white">Start Battle</h3>
           </div>
-          <p className="text-purple-200">Create an epic rap battle with your favorite characters</p>
+          <p className="text-purple-200">Turn Your Favorites Cartoons Characters Into a World Class Battle Rapper And See Which Ones Were Realy 'Bout that life.</p>
         </button>
 
         <button
@@ -72,7 +72,7 @@ export function Dashboard() {
         >
           <div className="flex items-center space-x-3 mb-4">
             <Mic className="h-8 w-8 text-white" />
-            <h3 className="text-xl font-bold text-white">Manage Characters</h3>
+            <h3 className="text-xl font-bold text-white">New Characters</h3>
           </div>
           <p className="text-orange-200">View, edit, and create custom rap battle characters</p>
         </button>

@@ -1,5 +1,5 @@
 import { useAuth } from '../../hooks/useAuth';
-import { LogOut, Trophy, User } from 'lucide-react';
+import { LogOut, User } from 'lucide-react';
 
 export function Header() {
   const { user, signOut } = useAuth();
@@ -8,18 +8,20 @@ export function Header() {
     <header className="bg-gray-900 border-b border-purple-500/20">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-2">
-            <Trophy className="h-8 w-8 text-purple-400" />
-            <h1 className="text-2xl font-bold text-white">
-              <span className="text-purple-400">Sucker</span>
-              <span className="text-orange-400">punch</span>
+          <div className="flex items-center justify-between">
+            <h1 className="text-lg font-black text-white -mr-3">
+              <span className="text-white">SUCKER</span>
+            </h1>  
+              <span><img src="/fist.png" alt="suckerpunch" className="w-14 mx-auto px-0" /></span>
+              <h1 className="text-lg font-black text-white -ml-3">
+              <span className="text-white">PUNCH</span>
             </h1>
           </div>
 
           <div className="flex items-center space-x-4">
             <div className="flex items-center space-x-2 text-gray-300">
               <User className="h-5 w-5" />
-              <span>Welcome back!</span>
+              <span>Welcome back! {user?.user_metadata.username}</span>
             </div>
             <button
               onClick={signOut}

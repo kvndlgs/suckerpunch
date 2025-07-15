@@ -20,7 +20,7 @@ const CHARACTER_VOICES: Record<string, string> = {
   'Batman': 'xAMrOR5PymFHdT8J95zY', // Adam voice (deep, dramatic)
   'Realistic Fish Head': 'DkDLZILbak4QilyAd0Xp', // 
   'Shaggy': 'VR6AewLTigWG4xSOukaG', // Josh voice (laid-back)
-  'Peter Griffin': 'TxGEqnHWrfWFTfGW9XjX', // Clyde voice (comedic)
+  'Peter Griffin': 'BYRWjbVpzKrq4SrM6fxD', // Clyde voice (comedic)
 };
 
 export async function generateVoiceAudio(
